@@ -10,3 +10,33 @@ html, body, #root {
   height: 100vh;
   position: relative;
 }
+
+.map-container {
+  height: 100vh;        /* fills the viewport */
+  width: 100%;
+  position: relative;   /* ensures absolute children position relative to this */
+  overflow: hidden;     /* clips markers to the map area */
+}
+
+/* Optional: keep emojis crisp */
+.marker {
+  line-height: 1;
+  user-select: none;
+}
+
+.location-icon {
+  font-size: 2rem;
+  color: red;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.loader h1{
+  margin-top: 90px;
+}
